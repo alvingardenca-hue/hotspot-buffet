@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>黑牛の家 - 温哥华 Kingsway 烧烤火锅自助</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- 业务结构化数据 (Structured Data) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "黑牛の家",
+      "description": "位于温哥华 Kingsway 的深夜任食烧烤、串烧及火锅自助餐，每日营业至凌晨 1 点。",
+      "image": "https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=2069&auto=format&fit=crop",
+      "@id": "https://hotspotbuffet.com",
+      "url": "https://hotspotbuffet.com",
+      "sameAs": [
+        "https://maps.app.goo.gl/LdW1GyCHf6rFsfe9A",
+        "https://www.instagram.com/hotspotbuffet/",
+        "https://www.ubereats.com/ca/store/hot-spot-buffet-%E9%BB%91%E7%89%9B%E3%81%AE%E5%AE%B6-240-3340-kingsway/iJWUDTZtWAqLl99jSI0LMQ",
+        "https://www.yelp.ca/biz/hot-spot-buffet-vancouver"
+      ],
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Vancouver"
+        },
+        {
+          "@type": "City",
+          "name": "Burnaby"
+        }
+      ],
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "午餐及深夜特惠自助",
+          "price": "24.99",
+          "priceCurrency": "CAD"
+        },
+        {
+          "@type": "Offer",
+          "name": "烧烤串烧自助",
+          "price": "45.99",
+          "priceCurrency": "CAD"
+        },
+        {
+          "@type": "Offer",
+          "name": "小火锅",
+          "price": "2.99",
+          "priceCurrency": "CAD"
+        }
+      ],
+      "telephone": "+1-604-336-1200",
+      "priceRange": "$$",
+      "hasMap": "https://maps.app.goo.gl/LdW1GyCHf6rFsfe9A",
+      "servesCuisine": ["Chinese", "Hot Pot", "Barbecue", "Skewers"],
+      "acceptsReservations": true,
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3340 Kingsway #240",
+        "addressLocality": "Vancouver",
+        "addressRegion": "BC",
+        "postalCode": "V5R 5L1",
+        "addressCountry": "CA"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+          ],
+          "opens": "11:30",
+          "closes": "01:00"
+        }
+      ]
+    }
+    </script>
+
+    <!-- FAQ 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "$24.99 特惠时段是什么时候？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "特惠价格从 $24.99 起，适用于特定午餐和深夜时段。午餐特惠：周一至周五 11:30 AM – 3:00 PM。深夜特惠：每日 10:30 PM – 1:00 AM。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "需要预订吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "欢迎随时光临。但在晚餐高峰期（尤其是 6:30 PM 至 9:30 PM），建议提前预订。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "最大的团体桌位是多少？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "我们通常可以安排最多 10 人的团体同桌用餐。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "有用餐时间限制吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "是的，标准用餐限时为 120 分钟。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "一个人可以吃烧烤吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "烧烤最少需要 2 人起订。单人顾客可以选择火锅自助。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "可以只选烧烤或只选火锅吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "是的。您可以单独选择烧烤或火锅。如果想两者兼得，个人小火锅仅需加收 $2.99。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "有酒精饮料吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "有的。我们提供啤酒及各种饮品，是温哥华深夜聚餐的热门选择。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "有儿童价格吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "有的。4 岁以下儿童免费，5 至 9 岁儿童享受 5 折优惠。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "有停车位吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "有的。餐厅正门口设有停车位，非常适合团体聚会和深夜到访。"
+          }
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        /* 基础样式 */
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: 'Inter', 'Noto Sans SC', sans-serif;
+            font-weight: 700;
+            scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
+        }
+        .font-montserrat-extrabold {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+        }
+        .font-montserrat-black {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+        }
+        /* 背景图设置 */
+        .hero-bg {
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.85)), url('https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=2069&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .food-bg {
+            background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.92)), url('https://images.unsplash.com/photo-1552611052-33e04de081de?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .vibe-bg {
+            background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.95)), url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .section-fade {
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .hero-title + .hero-sub {
+            margin-top: 12px;
+        }
+
+        .btn-outline {
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            color: #ffffff;
+            letter-spacing: 0.1em;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .btn-outline:hover {
+            background: rgba(255, 255, 255, 1);
+            color: #000;
+            border-color: rgba(255, 255, 255, 1);
+        }
+
+        .btn-text-only {
+            background: transparent;
+            color: #ffffff;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            text-decoration: none;
+            opacity: 0.7;
+            letter-spacing: 0.2em;
+        }
+        .btn-text-only:hover {
+            opacity: 1;
+            text-decoration: underline;
+            text-underline-offset: 8px;
+        }
+        
+        nav {
+            transition: all 0.4s ease;
+        }
+        nav.scrolled {
+            background: rgba(18, 18, 18, 0.9);
+            backdrop-filter: blur(15px);
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .price-card {
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            background: #000;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        .card-red-main {
+            border: 1px solid rgba(255, 255, 255, 0.2) !important;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+        }
+        .card-dark {
+            background: #121212 !important;
+            border: 1px solid rgba(255, 255, 255, 0.08) !important;
+        }
+
+        /* FAQ Accordion Settings */
+        details summary::-webkit-details-marker {
+            display:none;
+        }
+        details[open] summary svg {
+            transform: rotate(180deg);
+        }
+
+        .pricing-section-bg {
+            background: #0c0c0c;
+        }
+
+        .summary-list {
+            list-style-type: disc;
+            list-style-position: inside;
+        }
+        .summary-list li::marker {
+            color: rgba(255,255,255,0.3);
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <!-- 导航栏 -->
+    <nav id="main-nav" class="fixed top-0 w-full z-50 flex justify-between items-center px-6 py-8">
+        <div class="text-lg tracking-[0.2em] uppercase font-bold text-white whitespace-nowrap">
+            黑牛の家
+        </div>
+        
+        <!-- 语言切换 -->
+        <div class="flex items-center gap-3 text-[10px] sm:text-xs tracking-widest font-bold text-white">
+            <a href="#" class="opacity-40 hover:opacity-100 transition-opacity">EN</a>
+            <span class="w-px h-3 bg-white/20"></span>
+            <a href="#" class="opacity-100">中文</a>
+        </div>
+    </nav>
+
+    <!-- 英雄页 (Hero Section) -->
+    <section class="relative h-screen flex flex-col items-center justify-center px-4 hero-bg">
+        <div class="text-center w-full max-w-7xl px-4 text-white transform translate-y-[30px] flex flex-col items-center">
+            <p class="text-[10px] sm:text-sm tracking-[0.5em] sm:tracking-[0.4em] uppercase text-white/80 font-bold mb-4">
+                KINGSWAY • 温哥华
+            </p>
+            <h1 class="hero-title font-montserrat-extrabold text-[8.5vw] sm:text-6xl md:text-[clamp(4.5rem,7vw,6.5rem)] xl:text-[6rem] 2xl:text-[7rem] leading-tight sm:leading-none tracking-tighter uppercase sm:whitespace-nowrap">
+                烧烤火锅自助
+            </h1>
+            <h2 class="hero-sub font-montserrat-extrabold text-[8.5vw] sm:text-6xl md:text-[clamp(4.5rem,7vw,6.5rem)] xl:text-[6rem] 2xl:text-[7rem] leading-tight sm:leading-none tracking-tighter uppercase sm:whitespace-nowrap mb-10">
+                无限量畅吃
+            </h2>
+            <div class="flex flex-col items-center mb-8 sm:mb-14">
+                <p class="text-[clamp(1.25rem,6vw,1.875rem)] sm:text-4xl xl:text-5xl tracking-[0.1em] sm:tracking-[0.3em] uppercase font-black text-yellow-400 whitespace-nowrap mb-4">
+                    营业至凌晨 1 点
+                </p>
+                <div class="text-center">
+                    <p class="text-[10px] sm:text-xs tracking-widest uppercase text-white/50 font-bold mt-1">
+                        位于温哥华 Kingsway 的深夜烧烤、串烧、火锅全日自助餐
+                    </p>
+                </div>
+            </div>
+            <div class="mt-8 sm:mt-0 flex flex-col items-center w-full sm:w-auto">
+                <a href="#reserve" class="w-full sm:w-auto btn-outline py-5 sm:px-16 text-base sm:text-lg tracking-[0.2em] font-bold text-center">
+                    立即订位
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 特色条 -->
+    <div class="bg-[#0c0c0c] pt-4 md:pt-6 pb-8 md:pb-12">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-2 gap-y-4 md:flex md:flex-row md:justify-center md:items-center md:divide-x md:divide-white/10 uppercase tracking-[0.15em] text-[10px] sm:text-xs font-bold text-white/60">
+                <div class="px-4 md:px-10 text-center">营业至凌晨 1 点</div>
+                <div class="px-4 md:px-10 text-center">烧烤 & 串烧自助</div>
+                <div class="px-4 md:px-10 text-center">可容纳10人聚餐</div>
+                <div class="px-4 md:px-10 text-center">免费停车</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 关于我们 (About Section) -->
+    <section class="about-section text-center max-w-4xl mx-auto px-6 py-24" aria-label="黑牛の家简介">
+        <p class="text-lg sm:text-xl md:text-2xl font-medium text-white/90 leading-relaxed tracking-tight">
+            黑牛の家是位于温哥华 Kingsway 的烧烤火锅自助，可以一次吃到烧烤和火锅，也能按喜好加上海鲜和串烧。适合晚餐、宵夜、朋友聚餐和多人聚餐。
+        </p>
+    </section>
+
+    <!-- 自助烧烤包含 (What's Included Section) -->
+    <section class="max-w-5xl mx-auto px-6 py-20 border-t border-white/5" aria-label="自助烧烤包含内容">
+        <h2 class="text-3xl sm:text-4xl font-montserrat-black uppercase tracking-tight text-white mb-2 text-center">
+            自助烧烤包含
+        </h2>
+        <p class="text-[10px] sm:text-xs tracking-[0.2em] uppercase text-white/40 font-bold mb-12 text-center italic">
+            * 部分项目需额外收费
+        </p>
+        
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-8 sm:gap-12 text-center">
+            <div class="flex flex-col items-center gap-4">
+                <div class="w-8 h-px bg-yellow-400"></div>
+                <span class="text-white font-bold uppercase tracking-widest text-xs sm:text-sm">精选烧烤肉类</span>
+            </div>
+            <div class="flex flex-col items-center gap-4">
+                <div class="w-8 h-px bg-yellow-400"></div>
+                <span class="text-white font-bold uppercase tracking-widest text-xs sm:text-sm">特色串烧</span>
+            </div>
+            <div class="flex flex-col items-center gap-4">
+                <div class="w-8 h-px bg-yellow-400"></div>
+                <span class="text-white font-bold uppercase tracking-widest text-xs sm:text-sm">自助菜色</span>
+            </div>
+            <div class="flex flex-col items-center gap-4">
+                <div class="w-8 h-px bg-yellow-400"></div>
+                <span class="text-white font-bold uppercase tracking-widest text-xs sm:text-sm">小火锅*</span>
+            </div>
+            <div class="flex flex-col items-center gap-4">
+                <div class="w-8 h-px bg-yellow-400"></div>
+                <span class="text-white font-bold uppercase tracking-widest text-xs sm:text-sm">升级海鲜*</span>
+            </div>
+            <div class="flex flex-col items-center gap-4">
+                <div class="w-8 h-px bg-yellow-400"></div>
+                <span class="text-white font-bold uppercase tracking-widest text-xs sm:text-sm">酒水 & 啤酒*</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 价格部分 -->
+    <section id="menu" class="pricing-section-bg flex flex-col justify-center pt-16 md:pt-20 pb-24 border-t border-white/5">
+        <div class="max-w-6xl mx-auto w-full px-6 text-center">
+            <h2 class="text-xl sm:text-2xl xl:text-3xl mb-16 uppercase tracking-[0.4em] text-white opacity-60 font-bold">自助餐价格</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-6 xl:gap-10 mb-16 items-stretch">
+                <div class="price-card card-red-main px-4 py-16 sm:px-10 text-center md:scale-105 z-10">
+                    <h3 class="text-lg sm:text-xl xl:text-2xl uppercase tracking-[0.2em] mb-6 font-montserrat-extrabold text-white/90">烧烤 & 串烧</h3>
+                    <div class="w-12 h-px bg-white mx-auto mb-8 opacity-20"></div>
+                    <span class="font-montserrat-black text-6xl xl:text-7xl tracking-tighter text-yellow-400">$45.99</span>
+                </div>
+                <div class="price-card card-dark px-4 py-16 sm:px-10 text-center">
+                    <h3 class="text-lg sm:text-xl xl:text-2xl uppercase tracking-[0.2em] mb-6 font-montserrat-extrabold text-white/90">升级海鲜</h3>
+                    <div class="w-12 h-px bg-white/20 mx-auto mb-8"></div>
+                    <span class="font-montserrat-black text-6xl xl:text-7xl tracking-tighter text-yellow-400">+$13</span>
+                </div>
+                <div class="price-card card-dark px-4 py-16 sm:px-10 text-center border-dashed">
+                    <h3 class="text-lg sm:text-xl xl:text-2xl uppercase tracking-[0.2em] mb-6 font-montserrat-extrabold text-white/90">小火锅</h3>
+                    <div class="w-12 h-px bg-white/20 mx-auto mb-8"></div>
+                    <span class="font-montserrat-black text-6xl xl:text-7xl tracking-tighter text-yellow-400">+$2.99</span>
+                </div>
+            </div>
+            <p class="mt-12 text-[11px] sm:text-xs tracking-widest uppercase text-white/40 font-bold max-w-2xl mx-auto leading-relaxed px-4 text-center">
+                温哥华顶级烧烤火锅自助<br>包含各式串烧、海鲜升级，<br class="sm:hidden">及个人锅底小火锅服务。
+            </p>
+            <div class="mt-12">
+                <a href="#" class="btn-outline px-10 py-5 text-base sm:text-lg tracking-[0.2em] font-bold inline-block">查看自助详情</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 促销部分 -->
+    <section class="min-h-screen food-bg flex flex-col justify-center px-10 py-20 border-t border-white/5 text-center text-white">
+        <h2 class="text-5xl sm:text-6xl xl:text-7xl mb-8 leading-tight tracking-tighter uppercase font-montserrat-extrabold drop-shadow-lg">
+            午餐 &<br/>深夜特惠
+        </h2>
+        
+        <div class="flex items-center justify-center mb-10 group">
+            <div class="flex items-start gap-1">
+                <span class="text-[10px] sm:text-[14px] uppercase text-white font-black mt-4 sm:mt-6 opacity-80">价格自</span>
+                <div class="flex items-start">
+                    <span class="text-4xl sm:text-5xl md:text-6xl font-montserrat-black text-yellow-400 mt-2">$</span>
+                    <span class="text-8xl sm:text-9xl md:text-[clamp(6.5rem,12vw,10rem)] font-montserrat-black text-yellow-400 leading-none tracking-tighter transition-transform duration-500 group-hover:scale-105">
+                        24.99
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="text-base sm:text-xl xl:text-2xl uppercase tracking-[0.2em] font-bold drop-shadow-md opacity-90 mb-12">
+            下午 3 点前 • 晚上 10:30 后
+        </h3>
+        
+        <div class="flex justify-center w-full">
+            <a href="#" class="btn-outline w-full sm:w-auto px-10 sm:px-12 py-5 text-xs sm:text-sm tracking-[0.3em] font-bold">
+                查看特惠时段详情
+            </a>
+        </div>
+    </section>
+
+    <!-- 位置与预约部分 -->
+    <section class="min-h-[90vh] bg-[#121212] flex flex-col justify-center py-24 border-t border-white/5 text-center text-white">
+        <div class="max-w-7xl mx-auto w-full px-8">
+            <div class="mb-12 flex items-center justify-center gap-2 opacity-90">
+                <span class="text-yellow-400 text-xl">★</span>
+                <span class="text-white text-sm sm:text-base tracking-[0.2em] uppercase font-bold">Google 评分 4.3</span>
+            </div>
+            
+            <div class="mb-4">
+                <p class="text-xs tracking-widest uppercase text-white/50 font-bold mt-2">
+                    免费停车 · 邻近 Joyce-Collingwood 站 · 温哥华
+                </p>
+            </div>
+            
+            <h2 class="font-montserrat-black text-[clamp(2rem,9.5vw,3.75rem)] sm:text-5xl md:text-6xl lg:text-7xl text-yellow-400 tracking-tighter uppercase leading-none mb-6 whitespace-nowrap">
+                营业至凌晨 1 点
+            </h2>
+            
+            <a href="https://maps.app.goo.gl/qAog6EAkQRQCHoC6A" target="_blank" class="inline-block text-sm sm:text-xl xl:text-2xl tracking-[0.3em] uppercase text-white font-bold mb-16 opacity-80 hover:opacity-100 transition-opacity">
+                3340 Kingsway #240 · 温哥华
+            </a>
+            
+            <div class="flex flex-col items-center w-full sm:w-auto mx-auto">
+                <a href="#reserve" class="w-full sm:w-auto btn-outline py-5 sm:px-16 text-base sm:text-lg tracking-[0.2em] font-bold text-center">
+                    立即订位
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 常见问题部分 (FAQ) -->
+    <section class="py-24 bg-[#0a0a0a] border-t border-white/5">
+        <div class="max-w-4xl mx-auto px-8 text-center">
+            <h2 class="font-montserrat-black text-3xl sm:text-4xl text-yellow-400 tracking-tighter uppercase mb-4">
+                常见问题
+            </h2>
+            <p class="text-sm sm:text-base text-white/50 font-medium italic mb-16">
+                来店前有疑问？这里有您想知道的一切。
+            </p>
+            
+            <div class="space-y-4 text-left">
+                <details class="group border-b border-white/10 pb-4">
+                    <summary class="flex justify-between items-center cursor-pointer list-none">
+                        <h3 class="text-lg sm:text-xl font-bold tracking-tight">$24.99 特惠时段是什么时候？</h3>
+                        <svg class="w-6 h-6 text-yellow-400 transition-transform duration-300 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </summary>
+                    <div class="mt-4 text-white/60 font-medium leading-relaxed">
+                        特惠价格从 $24.99 起，适用于特定午餐和深夜时段。<br><br>
+                        <span class="text-white">午餐特惠：</span><br>
+                        周一至周五 · 11:30 AM – 3:00 PM<br><br>
+                        <span class="text-white">深夜特惠：</span><br>
+                        每日 · 10:30 PM – 1:00 AM
+                    </div>
+                </details>
+
+                <details class="group border-b border-white/10 pb-4">
+                    <summary class="flex justify-between items-center cursor-pointer list-none">
+                        <h3 class="text-lg sm:text-xl font-bold uppercase tracking-tight">需要预订吗？</h3>
+                        <svg class="w-6 h-6 text-yellow-400 transition-transform duration-300 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </summary>
+                    <p class="mt-4 text-white/60 font-medium leading-relaxed">
+                        欢迎随时光临。但在晚餐高峰期（尤其是 6:30 PM 至 9:30 PM），建议提前预订以确保位子。
+                    </p>
+                </details>
+
+                <details class="group border-b border-white/10 pb-4">
+                    <summary class="flex justify-between items-center cursor-pointer list-none">
+                        <h3 class="text-lg sm:text-xl font-bold uppercase tracking-tight">最大的团体桌位是多少？</h3>
+                        <svg class="w-6 h-6 text-yellow-400 transition-transform duration-300 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </summary>
+                    <p class="mt-4 text-white/60 font-medium leading-relaxed">
+                        我们通常可以将最多 10 人的团体安排在同一张桌子用餐。
+                    </p>
+                </details>
+
+                <details class="group border-b border-white/10 pb-4">
+                    <summary class="flex justify-between items-center cursor-pointer list-none">
+                        <h3 class="text-lg sm:text-xl font-bold uppercase tracking-tight">有用餐时间限制吗？</h3>
+                        <svg class="w-6 h-6 text-yellow-400 transition-transform duration-300 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </summary>
+                    <p class="mt-4 text-white/60 font-medium leading-relaxed">
+                        是的，为了确保所有顾客的用餐体验，标准用餐时间限制为 120 分钟。
+                    </p>
+                </details>
+
+                <details class="group border-b border-white/10 pb-4">
+                    <summary class="flex justify-between items-center cursor-pointer list-none">
+                        <h3 class="text-lg sm:text-xl font-bold uppercase tracking-tight">单人可以吃烧烤吗？</h3>
+                        <svg class="w-6 h-6 text-yellow-400 transition-transform duration-300 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </summary>
+                    <p class="mt-4 text-white/60 font-medium leading-relaxed">
+                        由于设备原因，自助烧烤最少需要 2 人起。单人用餐顾客可以选择我们的自助火锅。
+                    </p>
+                </details>
+
+                <details class="group border-b border-white/10 pb-4">
+                    <summary class="flex justify-between items-center cursor-pointer list-none">
+                        <h3 class="text-lg sm:text-xl font-bold uppercase tracking-tight">可以只选烧烤或只选火锅吗？</h3>
+                        <svg class="w-6 h-6 text-yellow-400 transition-transform duration-300 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </summary>
+                    <p class="mt-4 text-white/60 font-medium leading-relaxed">
+                        可以。您可以单独选择烧烤或火锅。如果想两者兼得，个人小火锅每人加收 $2.99。
+                    </p>
+                </details>
+
+                <details class="group border-b border-white/10 pb-4">
+                    <summary class="flex justify-between items-center cursor-pointer list-none">
+                        <h3 class="text-lg sm:text-xl font-bold uppercase tracking-tight">有酒精饮料吗？</h3>
+                        <svg class="w-6 h-6 text-yellow-400 transition-transform duration-300 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </summary>
+                    <p class="mt-4 text-white/60 font-medium leading-relaxed">
+                        有的。我们提供啤酒及各种饮品，是温哥华深夜消遣的热门地点。
+                    </p>
+                </details>
+
+                <details class="group border-b border-white/10 pb-4">
+                    <summary class="flex justify-between items-center cursor-pointer list-none">
+                        <h3 class="text-lg sm:text-xl font-bold uppercase tracking-tight">有儿童价格吗？</h3>
+                        <svg class="w-6 h-6 text-yellow-400 transition-transform duration-300 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </summary>
+                    <p class="mt-4 text-white/60 font-medium leading-relaxed">
+                        有的。4 岁以下儿童免费，5 至 9 岁儿童享受成人价格的 5 折优惠。
+                    </p>
+                </details>
+
+                <details class="group border-b border-white/10 pb-4">
+                    <summary class="flex justify-between items-center cursor-pointer list-none">
+                        <h3 class="text-lg sm:text-xl font-bold uppercase tracking-tight">有停车位吗？</h3>
+                        <svg class="w-6 h-6 text-yellow-400 transition-transform duration-300 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </summary>
+                    <p class="mt-4 text-white/60 font-medium leading-relaxed">
+                        有的。餐厅门口有充足停车位，停车非常方便，适合各类聚会。
+                    </p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-[#121212] pt-24 pb-16 text-center border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <!-- 社交媒体图标 -->
+            <div class="flex justify-center gap-8 mb-10 text-white opacity-80">
+                <a href="#" class="hover:text-red-500 transition-colors">
+                    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                        <path d="M21.5 0h-19C1.1 0 0 1.1 0 2.5v19C0 22.9 1.1 24 2.5 24h19c1.4 0 2.5-1.1 2.5-2.5v-19C24 1.1 22.9 0 21.5 0zM17.5 17.5c-0.2 0.8-0.9 1.4-1.7 1.4H8.2c-0.8 0-1.5-0.6-1.7-1.4l-1.5-6.5c-0.1-0.4 0-0.9 0.3-1.2 0.3-0.3 0.7-0.5 1.2-0.5h11c0.5 0 0.9 0.2 1.2 0.5 0.3 0.3 0.4 0.8 0.3 1.2l-1.5 6.5zM12 9c-1.1 0-2 0.9-2 2s0.9 2 2 2 2-0.9 2-2-0.9-2-2-2z"/>
+                    </svg>
+                </a>
+                <a href="#" class="hover:text-yellow-400 transition-colors">
+                    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                        <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.03 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.9-.32-1.98-.23-2.81.36-.54.38-.89.98-1.02 1.64-.17.74-.03 1.54.38 2.15.41.67 1.08 1.13 1.84 1.25.75.13 1.55-.07 2.15-.55.67-.52 1.06-1.36 1.07-2.21-.01-4.26.01-8.51.01-12.77z"/>
+                    </svg>
+                </a>
+                <a href="#" class="hover:text-yellow-400 transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- 地址栏 -->
+            <div class="mb-2">
+                <a href="https://maps.app.goo.gl/qAog6EAkQRQCHoC6A" target="_blank" class="inline-flex items-center justify-center gap-2 text-white hover:text-yellow-400 hover:underline transition-all duration-300" style="font-size: 14px; font-weight: 700; letter-spacing: 0.5px;">
+                    <svg class="w-4 h-4 text-yellow-400 shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                    </svg>
+                    3340 Kingsway #240, Vancouver, BC V5R 5L1 · 加拿大
+                </a>
+            </div>
+
+            <!-- 营业时间 -->
+            <div class="mb-12" style="font-size: 12px; color: rgba(255,255,255,0.6);">
+                每日营业 · 11:30 AM – 1:00 AM
+            </div>
+
+            <!-- 分割线 -->
+            <hr class="max-w-screen-xl mx-auto border-white" style="opacity: 0.08;">
+
+            <!-- 底部内容 -->
+            <div class="mt-12">
+                <!-- 宣传语 -->
+                <p style="font-size: 13px; color: rgba(255,255,255,0.6); margin: 16px 0;">
+                    深夜烧烤火锅任食自助 · 温哥华 Kingsway · 团体聚会首选
+                </p>
+                
+                <!-- 版权声明 -->
+                <p class="uppercase" style="font-size: 12px; color: rgba(255,255,255,0.4); font-weight: 700;">
+                    © 2026 黑牛の家
+                </p>
+                
+                <!-- 技术支持 -->
+                <p class="mt-10" style="font-size: 11px; color: rgba(255,255,255,0.3); font-weight: 400;">
+                    由 <a href="https://visibleai.ca/?utm_source=hotspotbuffet&utm_medium=footer&utm_campaign=hot_spot_buffet" target="_blank" class="hover:text-yellow-400 hover:underline transition-all duration-300" style="color: #ffffff; font-weight: 600;">VISIBLEAI</a> 为 AI 搜索构建及优化
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script>
+        const nav = document.getElementById('main-nav');
+        window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 50));
+        const obs = new IntersectionObserver((entries) => { entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('opacity-100'); e.target.classList.remove('opacity-0', 'translate-y-4'); } }); }, { threshold: 0.1 });
+        document.querySelectorAll('section').forEach(s => { s.classList.add('section-fade', 'opacity-0', 'translate-y-4'); obs.observe(s); });
+    </script>
+</body>
+</html>
