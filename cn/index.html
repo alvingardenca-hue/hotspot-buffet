@@ -328,8 +328,10 @@
     </nav>
 
     <!-- 英雄页 (Hero Section) -->
-    <section class="relative h-screen flex flex-col items-center justify-center px-4 hero-bg">
-        <div class="text-center w-full max-w-7xl px-4 text-white transform translate-y-[12px] sm:translate-y-[30px] flex flex-col items-center">
+<section class="relative h-screen flex flex-col items-center justify-center px-4 hero-bg overflow-hidden">
+    <div class="absolute inset-0 bg-black/15 backdrop-blur-[2px] md:bg-transparent md:backdrop-blur-0"></div>
+
+    <div class="relative z-10 text-center w-full max-w-7xl px-4 text-white transform translate-y-[12px] sm:translate-y-[30px] flex flex-col items-center">
             <p class="text-[10px] sm:text-sm tracking-[0.5em] sm:tracking-[0.4em] uppercase text-white/80 font-bold mb-4">
                 KINGSWAY • 温哥华
             </p>
