@@ -293,6 +293,28 @@
         .summary-list li::marker {
             color: rgba(255,255,255,0.3);
         }
+        @media (max-width: 768px) {
+        .hero-bg,
+        .food-bg,
+        .vibe-bg {
+            background-attachment: scroll;
+        }
+    
+        .hero-bg {
+            background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.72)),
+            url('https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=2069&auto=format&fit=crop');
+        }
+    
+        .food-bg {
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.78)),
+            url('https://images.unsplash.com/photo-1552611052-33e04de081de?q=80&w=2070&auto=format&fit=crop');
+        }
+    
+        .vibe-bg {
+            background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.82)),
+            url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=2070&auto=format&fit=crop');
+        }
+    }
     </style>
 </head>
 <body class="overflow-x-hidden">
